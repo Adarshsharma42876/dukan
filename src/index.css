@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('../public/font/Inter.ttc') format('truetype'), /* Update with your font file and format */
+       url('../public/font/InterVariable.ttf') format('truetype');
+  /* Add other font formats if applicable */
+  font-weight: normal; /* Specify font weight if needed */
+  font-style: normal; /* Specify font style if needed */
+}
+
+body{
+  font-family: 'inter'  , sans-serif ;
+  background: #f2f2f2;
+}
+.left-padding{
+
+  margin-left: -70px;
+}
+
+.end-left-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  /* Other styles for the div */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.flex-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Other flex container styles */
+}
